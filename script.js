@@ -50,13 +50,13 @@ paperimg2.width = '80';
 
 
 rulebutton.addEventListener('click', function () {
-    rulebox.style.display = 'block';
+    rulebox.classList.add('rulebox_open');
     setTimeout(() => {
-        rulebox.style.display = 'none';
-    }, 20000);
+        rulebox.classList.remove('rulebox_open');
+    }, 25000);
 })
 close.addEventListener('click', function () {
-    rulebox.style.display = 'none';
+    rulebox.classList.remove('rulebox_open');
 })
 
 

@@ -122,7 +122,9 @@ img {
 }
 
 .rulebox {
-  display: none;
+  z-index: -1;
+  opacity: 0;
+  overflow: hidden;
   background-color: #004429;
   color: #ffffff;
   position: fixed;
@@ -133,7 +135,11 @@ img {
   border-radius: 13px;
   border: 7px solid #ffffff;
 }
-
+.rulebox_open {
+  z-index: 9999;
+  opacity: 1;
+  overflow: visible;
+}
 .rulebox h2 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
