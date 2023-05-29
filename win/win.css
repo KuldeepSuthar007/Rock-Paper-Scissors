@@ -192,3 +192,20 @@ li {
   background-repeat: no-repeat;
   cursor: pointer;
 }
+@media only screen and (min-width: 1030px) and (max-width: 1366px) {
+  body {
+    overflow: visible;
+  }
+  .top {
+    margin: 0px 0px 0px 0px;
+  }
+  .text {
+    margin: 3px 0px;
+  }
+  .bottom {
+    margin-top: 0px;
+  }
+  .rulebox {
+    top: 215px;
+  }
+}
