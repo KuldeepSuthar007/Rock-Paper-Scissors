@@ -59,7 +59,6 @@ close.addEventListener('click', function () {
     rulebox.classList.remove('rulebox_open');
 })
 
-
 function playerChoicesfn() {
     if (playerChoices === "rock") {
         plpickring.classList.add('rock')

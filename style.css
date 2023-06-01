@@ -3,7 +3,6 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
 }
 
 body {
@@ -383,10 +382,13 @@ li {
   box-shadow: 0 0 0 52px #418f05, 0 0 0 82px #57a719, 0 0 0 112px #7ab949;
   z-index: -200;
 }
+
+.frame1 {
+  /* background-color: red; */
+  width: 100vw;
+  height: 100vh;
+}
 @media only screen and (min-width: 1030px) and (max-width: 1366px) {
-  body {
-    background-color: red;
-  }
   .headersection {
     margin-top: 30px;
     width: 700px;
@@ -409,21 +411,50 @@ li {
     top: 215px;
   }
 }
-
 @media only screen and (max-width: 480px) {
-  body {
+  .headersection {
+    justify-content: space-between;
+    flex-direction: column;
+    width: 0px;
+    min-width: 0px;
+    height: 0px;
+    margin: 0px;
+    margin-top: 0px;
+    padding: 0px;
+    padding-left: 0px;
+  }
+  .gamesection {
+    width: 380px;
+    max-width: 380px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .rulebox {
+    position: absolute;
+    top: 380px;
+  }
+}
+/*@media only screen and (max-width: 480px) {
+   body {
     overflow: scroll;
     width: auto;
     min-width: auto;
   }
+ 
   .headersection {
-    display: flex;
-    justify-content: space-between;
-    width: 408px;
-    min-width: 408px;
-    height: 170px;
-    margin-top: 30px;
-  }
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 800px;
+  min-width: 800px;
+  height: 150px;
+  margin: auto;
+  margin-top: 70px;
+  padding: 5px;
+  padding-left: 20px;
+  border: 2px solid white;
+  border-radius: 13px;
+}
   .logobox {
     display: flex;
     width: 167px;
@@ -488,6 +519,9 @@ li {
 
   .maincontainer {
     width: 400px;
+    min-width: 400px;
+    display: flex;
+    justify-content: center;
     margin: 0px;
   }
   .gamesection {
@@ -498,15 +532,20 @@ li {
 
   .footersection {
     align-items: center;
-    justify-content: center;
-    margin-top: 425px;
-    width: auto;
-    min-width: auto;
+    justify-content: space-between;
+    margin-top: 0px;
+    width: 410px;
+    min-width: 410px;
+  }
+  .next_button {
+    margin-right: 0px;
   }
   .bottom {
     display: flex;
-    flex-direction: column;
+    flex-direction: flex;
     align-items: center;
+    width: 410px;
+    min-width: 410px;
     justify-content: center;
   }
   .rule_button {
@@ -533,4 +572,4 @@ li {
     margin-top: 10px;
     margin-right: 0px;
   }
-}
+} */
